@@ -2305,7 +2305,7 @@
                 <span style="background: var(--orange); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 700;">SECTION 3</span>
                 <span style="font-size: 12px; color: var(--gray-500);">10 MINUTES</span>
             </div>
-            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px;">Gap Analysis: 70/20/10 Breakdown</h3>
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px; color: var(--gray-900);">Gap Analysis: 70/20/10 Breakdown</h3>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px;">
                 <div style="background: white; border: 1px solid var(--gray-200); border-radius: 12px; padding: 30px;">
@@ -2357,7 +2357,7 @@
                 <span style="background: var(--green); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 700;">SECTION 4</span>
                 <span style="font-size: 12px; color: var(--gray-500);">10 MINUTES</span>
             </div>
-            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px;">ROI Presentation</h3>
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px; color: var(--gray-900);">ROI Presentation</h3>
 
             <div style="background: white; border: 2px solid var(--green); border-radius: 16px; padding: 40px; margin-bottom: 30px;">
                 <h4 style="font-size: 20px; font-weight: 700; color: var(--gray-900); margin-bottom: 30px;">Investment vs. Return</h4>
@@ -2383,19 +2383,19 @@
                 <div style="background: var(--green); color: white; border-radius: 12px; padding: 30px; text-align: center;">
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
                         <div>
-                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px;">Net Savings</div>
-                            <div style="font-size: 36px; font-weight: 700;">$423,000</div>
-                            <div style="font-size: 13px; opacity: 0.8;">first year</div>
+                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px; color: white;">Net Savings</div>
+                            <div style="font-size: 36px; font-weight: 700; color: white;">$423,000</div>
+                            <div style="font-size: 13px; opacity: 0.8; color: white;">first year</div>
                         </div>
                         <div>
-                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px;">ROI</div>
-                            <div style="font-size: 36px; font-weight: 700;">5.6x</div>
-                            <div style="font-size: 13px; opacity: 0.8;">return on investment</div>
+                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px; color: white;">ROI</div>
+                            <div style="font-size: 36px; font-weight: 700; color: white;">5.6x</div>
+                            <div style="font-size: 13px; opacity: 0.8; color: white;">return on investment</div>
                         </div>
                         <div>
-                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px;">Payback Period</div>
-                            <div style="font-size: 36px; font-weight: 700;">2.1</div>
-                            <div style="font-size: 13px; opacity: 0.8;">months</div>
+                            <div style="font-size: 14px; opacity: 0.9; margin-bottom: 5px; color: white;">Payback Period</div>
+                            <div style="font-size: 36px; font-weight: 700; color: white;">2.1</div>
+                            <div style="font-size: 13px; opacity: 0.8; color: white;">months</div>
                         </div>
                     </div>
                 </div>
@@ -2425,7 +2425,7 @@
                 <span style="background: var(--gray-900); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 700;">SECTION 5</span>
                 <span style="font-size: 12px; color: var(--gray-500);">5 MINUTES</span>
             </div>
-            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px;">Next Steps</h3>
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 30px; color: var(--gray-900);">Next Steps</h3>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px;">
                 <div style="background: white; border: 1px solid var(--gray-200); border-radius: 12px; padding: 30px;">
@@ -2485,10 +2485,10 @@
         <!-- The Complete Prompt -->
         <div style="background: var(--gray-50); border-radius: 24px; padding: 50px; border: 2px solid var(--gray-200);">
             <div style="margin-bottom: 40px;">
-                <div style="display: inline-block; background: var(--gray-900); color: white; padding: 10px 24px; border-radius: 20px; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 20px;">
+                <div id="copyButton" onclick="copyPrompt()" style="display: inline-block; background: var(--gray-900); color: white; padding: 10px 24px; border-radius: 20px; font-size: 13px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 20px; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#404040'" onmouseout="this.style.background='var(--gray-900)'">
                     COPY THIS PROMPT
                 </div>
-                <div style="background: white; border-radius: 16px; padding: 40px; border: 1px solid var(--gray-200); font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.8; color: var(--gray-700); white-space: pre-wrap; max-height: 600px; overflow-y: auto;">
+                <div id="promptText" style="background: white; border-radius: 16px; padding: 40px; border: 1px solid var(--gray-200); font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.8; color: var(--gray-700); white-space: pre-wrap; max-height: 600px; overflow-y: auto;">
 # WORKFLOW GENERATION FROM DISCOVERY NOTES
 
 You are an expert workflow designer for FourKites Agent Studio. Convert the discovery notes below into precise natural language workflow definitions that can be directly imported into Agent Studio.
@@ -2989,6 +2989,24 @@ They pay about $15k/month in detention. Want to get OTIF from 82% to 95%. Proces
                 }
             }
         });
+
+        // Copy prompt functionality
+        function copyPrompt() {
+            const promptText = document.getElementById('promptText').innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                const button = document.getElementById('copyButton');
+                const originalText = button.innerText;
+                button.innerText = '✓ COPIED!';
+                button.style.background = '#22c55e';
+                setTimeout(() => {
+                    button.innerText = originalText;
+                    button.style.background = 'var(--gray-900)';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy. Please try selecting and copying manually.');
+            });
+        }
     </script>
 </body>
 </html>
